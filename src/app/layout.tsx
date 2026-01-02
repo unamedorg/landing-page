@@ -29,7 +29,7 @@ export const viewport = {
     maximumScale: 5,
 };
 
-const siteUrl = 'https://connectree.space';
+const siteUrl = 'https://arena.connectree.space';
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),

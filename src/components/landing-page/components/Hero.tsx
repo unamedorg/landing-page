@@ -80,7 +80,7 @@ export function Hero() {
                     className="flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full md:w-auto px-6 md:px-0"
                 >
                     <button
-                        onClick={() => window.open('https://connectree.space', '_blank')}
+                        onClick={() => window.open('https://arena.connectree.space', '_blank')}
                         className="group relative w-full md:w-auto px-10 py-4 bg-[#1e3a8a] text-white rounded-full transition-all duration-500 hover:scale-105 hover:bg-[#2563eb] shadow-[0_0_30px_rgba(30,58,138,0.4)] border border-white/10"
                     >
                         <span className="relative z-10 font-display font-bold text-sm tracking-widest uppercase">

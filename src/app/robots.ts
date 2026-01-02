@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://connectree.space/sitemap.xml',
+        sitemap: 'https://arena.connectree.space/sitemap.xml',
     }
 }

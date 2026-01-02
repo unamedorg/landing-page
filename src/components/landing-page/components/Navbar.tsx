@@ -81,13 +81,13 @@ export function Navbar() {
                     {/* RIGHT: Actions */}
                     <div className="flex items-center gap-4">
                         <button
-                            onClick={() => window.open('https://connectree.space', '_blank')}
+                            onClick={() => window.open('https://arena.connectree.space', '_blank')}
                             className="hidden md:block text-[12px] font-medium text-neutral-400 hover:text-white transition-colors"
                         >
                             Log In
                         </button>
                         <button
-                            onClick={() => window.open('https://connectree.space', '_blank')}
+                            onClick={() => window.open('https://arena.connectree.space', '_blank')}
                             className="relative px-4 py-2 md:px-5 md:py-2 bg-[#1e3a8a] text-white rounded-full font-bold text-[10px] md:text-[11px] transition-all hover:scale-105 hover:bg-[#2563eb] shadow-[0_0_20px_rgba(30,58,138,0.3)] uppercase tracking-wider block"
                         >
                             Join Arena
@@ -111,9 +111,9 @@ export function Navbar() {
 
                     <div className="w-full h-[1px] bg-white/10 my-4" />
 
-                    <button onClick={() => window.open('https://connectree.space', '_blank')} className="text-lg font-medium text-indigo-400">Log In</button>
+                    <button onClick={() => window.open('https://arena.connectree.space', '_blank')} className="text-lg font-medium text-indigo-400">Log In</button>
                     <button
-                        onClick={() => window.open('https://connectree.space', '_blank')}
+                        onClick={() => window.open('https://arena.connectree.space', '_blank')}
                         className="w-full py-4 bg-[#1e3a8a] text-white rounded-full font-bold text-sm uppercase tracking-wider"
                     >
                         Join Arena
