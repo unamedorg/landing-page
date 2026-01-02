@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: var(--font-outfit), sans-serif;
+  --font-serif: var(--font-outfit), sans-serif;
+  --font-mono: var(--font-space-mono), monospace;
+
+  --color-void-dark: #000000;
+  --color-star-white: #fffbf0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Obsidian "Void" Base */
+  --background: #020204;
+  --foreground: #fffbf0;
+  --accent-primary: rgba(255, 251, 240, 0.4);
+}
+
+::selection {
+  background: rgba(255, 251, 240, 0.2);
+  color: #fff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+
+  /* Mobile Optimizations */
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  touch-action: manipulation;
+  min-height: 100dvh;
+  width: 100vw;
+
+  /* Performance & Smoothness */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* GPU Acceleration for all motion elements */
+.motion-gpu {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Optimization for off-screen sections */
+.section-optimized {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+  /* Placeholder size for layout stability */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+  border: 2px solid #050505;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
